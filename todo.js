@@ -17,7 +17,7 @@ const server = http.createServer((req, res) => {
   res.setHeader("Content-Type", "application/json");
 
   const method = req.method;
-  const urlParts = req.url.split("/").filter(Boolean); // ['todo'] or ['todo', '1']
+  const urlParts = req.url.split("/").filter(Boolean); 
 
   // Get Route
   if (method === "GET" && urlParts.length === 1 && urlParts[0] === "todo") {
